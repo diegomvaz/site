@@ -1,0 +1,86 @@
+.resume {
+    padding: 80px 100px 100px 100px;
+    animation: start 2s;
+    border-bottom: 2px solid var(--background);
+    max-width: 1300px;
+}
+
+@media (width <=1300px) {
+    .resume {
+        padding: 80px 50px 50px 50px;
+    }
+}
+
+
+.resume-content {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: nowrap;
+    position: relative;
+    gap: 50px;
+}
+
+@media (width <=900px) {
+    .resume-content {
+        flex-wrap: wrap;
+    }
+}
+
+.resume-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 40px 0px 40px 0px;
+}
+
+.section-milestone {
+    border-left: 3px solid var(--secondary);
+    padding: 0px 20px 40px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    font-size: 0.9rem;
+}
+
+@media (width <=1300px) {
+    .section-milestone {
+        padding: 0px 0px 40px 20px;
+    }
+}
+
+
+.section-milestone:last-child {
+    padding-bottom: 0;
+}
+
+.section-milestone::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 3px solid var(--secondary);
+    border-radius: 60px;
+    position: absolute;
+    left: -11px;
+    top: 0;
+    box-sizing: border-box;
+}
+
+.milestone-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.milestone-period {
+    color: color-mix(in srgb, var(--text-primary-dark) 80%, transparent);
+}
+
+.milestone-institution {
+    font-style: italic;
+}

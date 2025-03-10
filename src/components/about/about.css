@@ -1,0 +1,47 @@
+.about {
+    padding: 80px 100px 100px 100px;
+    animation: start 2s;
+    border-bottom: 2px solid var(--background);
+    max-width: 1300px;
+}
+
+@keyframes start {
+    from {
+        opacity: 0;
+        transform: translateY(100px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0)
+    }
+}
+
+@media (width <=1300px) {
+    .about {
+        padding: 80px 50px 50px 50px;
+    }
+}
+
+
+.text {
+    padding: 40px 0;
+}
+
+.info {
+    display: flex;
+    justify-content: flex-start;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+@media (width <=1300px) {
+    .info {
+        display: flex;
+        gap: 40px;
+    }
+}
+
+.info-name {
+    font-weight: bold;
+}

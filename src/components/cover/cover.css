@@ -1,0 +1,139 @@
+.cover {
+    position: relative;
+    border-bottom: 2px solid var(--background);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.cover-conteiner {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    animation: start 2s;
+    gap: 50px;
+    padding: 80px 30px 30px 30px;
+    width: 45%;
+}
+
+.image {
+    width: 45%;
+}
+
+@keyframes start {
+    from {
+        opacity: 0;
+        transform: translateY(100px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0)
+    }
+}
+
+
+@media (width <=1300px) {
+    .cover-conteiner {
+        padding: 50px;
+        width: 80%;
+    }
+
+    .image {
+        width: 80%;
+    }
+}
+
+
+.hello {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--quinary);
+    padding: 12px 25px 12px 25px;
+    background-color: color-mix(in srgb, var(--quinary) 20%, transparent);
+}
+
+
+.cover-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-text-dark);
+}
+
+
+@media (width <=1300px) {
+    .cover-title {
+        font-size: 2rem;
+    }
+}
+
+
+.description {
+    color: var(--primary-text-dark);
+    opacity: 70%;
+}
+
+.download {
+    height: 50px;
+    width: 220px;
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 80%;
+    border: 2px solid lightgrey;
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.download:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: var(--secondary);
+    color: var(--text-primary-white);
+    border: 2px solid var(--secondary);
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.download:hover>img {
+    transition: 0.3s;
+    filter: invert(99%) sepia(12%) saturate(2%) hue-rotate(21deg) brightness(111%) contrast(100%);
+
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 70px;
+}
+
+
+@media (width <=1300px) {
+    .skills {
+        gap: 40px;
+    }
+}
+
+.skills-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.skills-title {
+    color: var(--primary-text-dark);
+    opacity: 70%;
+
+}

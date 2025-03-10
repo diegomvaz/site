@@ -1,0 +1,117 @@
+.menu {
+    height: 100px;
+    width: 100%;
+    color: var(--text-primary-white);
+    background-color: var(--primary);
+    position: relative;
+    font-size: 1rem;
+}
+
+.menu-container {
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    font-weight: 500;
+    padding: 0 10px;
+}
+
+@media (width <=1300px) {
+    .menu-container {
+        display: none;
+    }
+}
+
+.menu-container>div:hover {
+    color: var(--tertiary);
+}
+
+.button {
+    border: none;
+    background-color: var(--secondary);
+    color: var(--text-primary-white);
+    height: 45px;
+    width: 120px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--tertiary);
+    color: var(--text-primary-dark);
+}
+
+.menu-container>div:hover {
+    cursor: pointer;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.7rem;
+    line-height: 1;
+    width: 30px;
+}
+
+.letters {
+    color: var(--quinary);
+    font-weight: bold;
+    font-size: 4rem;
+    background-color: var(--secondary);
+    border-radius: 45px;
+}
+
+.name-container {
+    position: absolute;
+    left: 5%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px
+}
+
+.name-container:hover {
+    cursor: pointer;
+}
+
+.sandwich {
+    position: absolute;
+    height: 100%;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+@media (width > 1300px) {
+    .sandwich {
+        display: none;
+    }
+}
+
+.sandwich :nth-child(1) {
+    opacity: 80%;
+}
+
+.sandwich :nth-child(2) {
+    opacity: 50%;
+}
+
+.sandwich :nth-child(3) {
+    opacity: 30%;
+}
+
+.sandwich>div {
+    height: 5px;
+    width: 35px;
+    border-radius: 5px;
+    background-color: white;
+
+}
