@@ -42,8 +42,8 @@
 }
 
 .button:hover {
-    background-color: var(--tertiary);
-    color: var(--text-primary-dark);
+    background-color: var(--quinary);
+    transition: 0.3s;
 }
 
 .menu-container>div:hover {

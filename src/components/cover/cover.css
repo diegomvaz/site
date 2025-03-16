@@ -8,22 +8,6 @@
     justify-content: center;
 }
 
-
-.cover-conteiner {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-    animation: start 2s;
-    gap: 50px;
-    padding: 80px 30px 30px 30px;
-    width: 45%;
-}
-
-.image {
-    width: 45%;
-}
-
 @keyframes start {
     from {
         opacity: 0;
@@ -36,13 +20,36 @@
     }
 }
 
+.cover-conteiner {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    animation: start 2s;
+    gap: 50px;
+    padding: 80px 30px 30px 30px;
+    width: 45%;
+}
 
 @media (width <=1300px) {
     .cover-conteiner {
         padding: 50px;
         width: 80%;
     }
+}
 
+@media (width <=1000px) {
+    .cover-conteiner {
+        padding-left: 100px;
+        margin-bottom: 100px;
+    }
+}
+
+.image {
+    width: 45%;
+}
+
+@media (width <=1300px) {
     .image {
         width: 80%;
     }
@@ -61,37 +68,43 @@
     background-color: color-mix(in srgb, var(--quinary) 20%, transparent);
 }
 
+@media (width <=1000px) {
+    .hello {
+        font-size: 2.5rem;
+        padding: 20px 40px 20px 40px;
+        margin-top: 60px;
+    }
+}
 
 .cover-title {
     font-size: 3rem;
     font-weight: bold;
-    color: var(--primary-text-dark);
 }
 
-
-@media (width <=1300px) {
+@media (width <=1000px) {
     .cover-title {
-        font-size: 2rem;
+        font-size: 5rem;
     }
-}
-
-
-.description {
-    color: var(--primary-text-dark);
-    opacity: 70%;
 }
 
 .download {
     height: 50px;
     width: 220px;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 500;
-    opacity: 80%;
     border: 2px solid lightgrey;
     background-color: var(--background);
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+@media (width <=1000px) {
+    .download {
+        font-size: 2.2rem;
+        height: 100px;
+        width: 63%;
+    }
 }
 
 .download:hover {
@@ -107,6 +120,13 @@
     height: 20px;
 }
 
+@media (width <=1000px) {
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
 .download:hover>img {
     transition: 0.3s;
     filter: invert(99%) sepia(12%) saturate(2%) hue-rotate(21deg) brightness(111%) contrast(100%);
@@ -115,25 +135,34 @@
 
 .skills {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: flex-start;
     gap: 70px;
+    font-size: 20px;
+    font-size: 1rem;
 }
 
-
-@media (width <=1300px) {
+@media (width <=1000px) {
     .skills {
-        gap: 40px;
+        margin-top: 50px;
+        font-size: 2.5rem;
+        flex-wrap: wrap;
+        width: 80%;
     }
 }
 
 .skills-number {
-    font-size: 1.5rem;
+    font-size: 20px;
     font-weight: bold;
 }
 
-.skills-title {
-    color: var(--primary-text-dark);
-    opacity: 70%;
+@media (width <=1000px) {
+    .skills-number {
+        font-size: 3.5rem;
+    }
+}
 
+@media (width <=1000px) {
+    .description {
+        font-size: 2rem;
+    }
 }

@@ -1,12 +1,21 @@
 .resume {
-    padding: 80px 100px 100px 100px;
+    padding: 50px 100px 100px 100px;
     animation: start 2s;
     border-bottom: 2px solid var(--background);
-    max-width: 1300px;
+    width: 85%;
+    height: 100%;
 }
 
 @media (width <=1300px) {
     .resume {
+        padding: 50px 50px 50px 50px;
+        width: 80%;
+    }
+}
+
+@media (width <=1000px) {
+    .resume {
+        margin-top: 50px;
         padding: 80px 50px 50px 50px;
     }
 }
@@ -21,7 +30,7 @@
     gap: 50px;
 }
 
-@media (width <=900px) {
+@media (width <=1000px) {
     .resume-content {
         flex-wrap: wrap;
     }
@@ -32,10 +41,20 @@
     flex-direction: column;
 }
 
+
 .section-title {
     font-size: 1.3rem;
     font-weight: 600;
     margin: 40px 0px 40px 0px;
+}
+
+
+@media (width <=1000px) {
+    .section-title {
+        font-size: 2.6rem;
+        margin-bottom: 60px;
+        margin-top: 90px;
+    }
 }
 
 .section-milestone {
@@ -51,13 +70,22 @@
 @media (width <=1300px) {
     .section-milestone {
         padding: 0px 0px 40px 20px;
+
     }
 }
 
+@media (width <=1000px) {
+    .section-milestone {
+        font-size: 1.7rem;
+        padding: 0px 0px 90px 40px;
+        border-left: 6px solid var(--secondary);
+    }
+}
 
 .section-milestone:last-child {
     padding-bottom: 0;
 }
+
 
 .section-milestone::before {
     content: "";
@@ -72,13 +100,22 @@
     box-sizing: border-box;
 }
 
+@media (width <=1000px) {
+    .section-milestone::before {
+        width: 40px;
+        height: 40px;
+        border: 6px solid var(--secondary);
+        left: -23px;
+    }
+}
+
 .milestone-title {
     font-weight: 600;
     margin-bottom: 10px;
 }
 
 .milestone-period {
-    color: color-mix(in srgb, var(--text-primary-dark) 80%, transparent);
+    color: color-mix(in srgb, black 55%, transparent);
 }
 
 .milestone-institution {
