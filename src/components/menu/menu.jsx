@@ -6,6 +6,16 @@ export default function Menu() {
     const toggleHidden = () => {
         hidden == '' ? setHidden('hidden') : setHidden('')
     }
+    const sessions = {
+        'cover': 'Home',
+        'about': 'Sobre Mim',
+        'resume': 'Currículo',
+        'skills': 'Habilidades',
+        'projects': 'Projetos',
+        'testimonials': 'Depoimentos',
+        'contact': 'Contato'
+    }
+
     return (
         <div className='menu'>
             <div className='name-container'>
@@ -17,24 +27,35 @@ export default function Menu() {
                 <div></div>
             </div>
             <div className='menu-container content'>
-                <div>Home</div>
-                <div>Sobre Mim</div>
-                <div>Currículo</div>
-                <div>Habilidades</div>
-                <div>Projetos</div>
-                <div>Depoimentos</div>
-                <button className='button content'>Contato</button>
+                {Object.entries(sessions)
+                    .map(([key, value]) => {
+                        return (
+                            <a
+                                className={key == 'contact' ? 'button' : ''}
+                                href={'#' + key}
+                                key={key}
+                            >
+                                {value}
+                            </a>
+                        )
+                    }
+                    )}
             </div>
             <div className={`menu-hidden content ${hidden}`}>
-                <a href="#cover" onClick={() => toggleHidden()}>Home</a>
-                <a href="#about" onClick={() => toggleHidden()}>Sobre Mim</a>
-                <a href="#resume" onClick={() => toggleHidden()}>Currículo</a>
-                <a href="#skills" onClick={() => toggleHidden()}>Habilidades</a>
-                <a href="#projects" onClick={() => toggleHidden()}>Projetos</a>
-                <a href="#testimonials" onClick={() => toggleHidden()}>Depoimentos</a>
-                <a href="#contact" onClick={() => toggleHidden()}>Contato</a>
+                {Object.entries(sessions)
+                    .map(([key, value]) => {
+                        return (
+                            <a
+                                href={'#' + key}
+                                key={key}
+                                onClick={() => toggleHidden()}
+                            >
+                                {value}
+                            </a>
+                        )
+                    }
+                    )}
             </div>
-
         </div>
     )
 }
