@@ -3,8 +3,16 @@
     width: 100%;
     color: var(--text-primary-white);
     background-color: var(--primary);
-    position: relative;
+    position: sticky;
+    top: 0;
     font-size: 1rem;
+    z-index: 99;
+}
+
+@media (width <=1000px) {
+    .menu {
+        height: 160px;
+    }
 }
 
 .menu-container {
@@ -65,6 +73,12 @@
     border-radius: 45px;
 }
 
+@media (width <=1000px) {
+    .letters {
+        font-size: 5rem;
+    }
+}
+
 .name-container {
     position: absolute;
     left: 5%;
@@ -73,6 +87,12 @@
     display: flex;
     justify-content: center;
     gap: 20px
+}
+
+@media (width <=1000px) {
+    .name-container {
+        left: 8%;
+    }
 }
 
 .name-container:hover {
@@ -96,6 +116,13 @@
     }
 }
 
+@media (width <=1000px) {
+    .sandwich {
+        gap: 10px;
+        right: 70px;
+    }
+}
+
 .sandwich :nth-child(1) {
     opacity: 80%;
 }
@@ -113,5 +140,40 @@
     width: 35px;
     border-radius: 5px;
     background-color: white;
+}
 
+@media (width <=1000px) {
+    .sandwich>div {
+        height: 10px;
+        width: 70px;
+    }
+}
+
+.menu-hidden {
+    position: fixed;
+    width: 65%;
+    height: 100vh;
+    right: 0;
+    top: 160px;
+    background-color: var(--primary);
+    padding: 50px;
+    font-size: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    transition: 0.3s ease-in-out;
+}
+
+.menu-hidden a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu-hidden a:hover {
+    color: var(--tertiary);
+}
+
+.hidden {
+    right: -90%;
+    transition: 0.3s ease-in-out;
 }

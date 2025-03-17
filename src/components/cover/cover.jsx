@@ -6,7 +6,7 @@ import './cover.css'
 
 export default function Cover() {
     return (
-        <div className='cover'>
+        <div className='cover' id='cover'>
             <div className='cover-conteiner'>
                 <div className='hello content'>
                     Olá! Me chamo Diego Vaz

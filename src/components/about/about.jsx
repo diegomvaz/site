@@ -4,9 +4,9 @@ import './about.css'
 
 export default function About() {
     return (
-        <div className='about'>
+        <div className='about' id='about'>
 
-            <div className='subheader content'>Sobre</div>
+            <div className='subheader content'>Sobre Mim</div>
             <div className='line'></div>
             <div className='text content'>
                 Diego Vaz é um Analista de Dados com mais de 13 anos de experiência no mercado financeiro.
