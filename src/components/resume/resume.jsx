@@ -4,7 +4,7 @@ import './resume.css'
 export default function Resume() {
     return (
         <div className='resume content' id='resume'>
-            <div className='subheader content'>Currículo</div>
+            <div className='subheader'>Currículo</div>
             <div className='line'></div>
             <div className='resume-content'>
                 <div className='resume-section'>

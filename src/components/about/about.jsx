@@ -4,9 +4,8 @@ import './about.css'
 
 export default function About() {
     return (
-        <div className='about' id='about'>
-
-            <div className='subheader content'>Sobre Mim</div>
+        <div className='about content' id='about'>
+            <div className='subheader'>Sobre Mim</div>
             <div className='line'></div>
             <div className='text content'>
                 Diego Vaz é um Analista de Dados com mais de 13 anos de experiência no mercado financeiro.
@@ -19,7 +18,7 @@ export default function About() {
                 em análise de dados e gestão de conhecimento.
             </div>
 
-            <div className='info content'>
+            <div className='info'>
                 <div>
                     <div className='info-name'>Idade</div>
                     <div>35</div>
