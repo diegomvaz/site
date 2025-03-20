@@ -1,6 +1,6 @@
 import React from 'react'
 import { default as documentIcon } from './../../assets/document.svg';
-import { default as imageCover } from './../../assets/3.jpg';
+import { default as imageCover } from './../../assets/cover.jpg';
 import './cover.css'
 
 
