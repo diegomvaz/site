@@ -6,6 +6,8 @@ import { default as javascript } from './../../assets/javascript.svg';
 import { default as react } from './../../assets/react.svg';
 import { default as git } from './../../assets/git.svg';
 import { default as powerbi } from './../../assets/powerbi.svg';
+import { default as docker } from './../../assets/docker.svg';
+import { default as anbima } from './../../assets/anbima.svg';
 
 function Skills() {
     return (
@@ -45,12 +47,12 @@ function Skills() {
                     Power BI
                 </div>
                 <div className='skill-card'>
-                    {/* <img className='skill-icon' src={''} /> */}
-                    Precificação de Ativos
+                    <img className='skill-icon' src={docker} />
+                    Docker
                 </div>
                 <div className='skill-card'>
-                    {/* <img className='skill-icon' src={''} /> */}
-                    Fundos de Investimento
+                    <img className='skill-icon' src={anbima} />
+                    Certificação Anbima
                 </div>
             </div>
         </div>

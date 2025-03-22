@@ -43,8 +43,8 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 50px;
-    gap: 60px;
-    width: 50%;
+    gap: 50px;
+    width: 100%;
 }
 
 @media (width <=1300px) {

@@ -41,7 +41,7 @@ body {
 
 @media (width <=1000px) {
     .subheader {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 }
 
@@ -53,7 +53,7 @@ body {
 
 @media (width <=1000px) {
     .line {
-        width: 100px;
+        width: 150px;
         height: 6px;
         background-color: var(--secondary);
     }
