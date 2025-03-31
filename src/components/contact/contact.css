@@ -1,0 +1,85 @@
+.contact-container {
+    padding: 50px 100px 100px 100px;
+    animation: start 2s;
+    border-bottom: 2px solid var(--background);
+    width: 85%;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (width <=1300px) {
+    .contact-container {
+        padding: 50px 50px 50px 50px;
+        width: 90%;
+    }
+}
+
+@media (width <=1000px) {
+    .contact-container {
+        margin-top: 50px;
+        padding: 80px 50px 50px 50px;
+    }
+}
+
+.contact-description {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@media (width <=1000px) {
+    .contact-description {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}
+
+
+.form-button {
+    display: inline-block;
+    margin-bottom: 100px;
+    background: var(--secondary);
+    color: var(--text-primary-white);
+    width: 250px;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.form-button:hover {
+    background: color-mix(in srgb, var(--secondary) 80%, transparent);
+}
+
+@media (width <=1000px) {
+    .form-button {
+        width: 60vw;
+        padding: 20px 0;
+        margin-bottom: 150px;
+        font-size: 2.6rem;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.forma {
+    width: 150%;
+    height: 500px;
+    transform: translate(-50%, 80%);
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    background: var(--primary);
+    border-radius: 50%;
+
+}
+
+@media (width <=1000px) {
+    .forma {
+        display: none;
+    }
+}

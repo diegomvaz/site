@@ -1,4 +1,5 @@
 import About from "./components/about/about"
+import Contact from "./components/contact/contact"
 import Cover from "./components/cover/cover"
 import Menu from "./components/menu/menu"
 import Projects from "./components/projects/projects"
@@ -19,6 +20,7 @@ function App() {
         <Skills />
         <Projects />
         <Testimonials />
+        <Contact />
       </div>
     </>
   )
