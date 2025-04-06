@@ -1,0 +1,14 @@
+services:
+  site:
+    image: site-pessoal
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 3000:5173
+    volumes:
+      - nodemodules:/app/node_modules
+      - .:/app/
+
+volumes:
+  nodemodules: {}
